@@ -10,11 +10,11 @@
   font-family:Georgia, 'Times New Roman', Times, serif ;
 }
 
-.main {
+/* .main {
   background-image: url('./assets/herobg.avif');
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .logo {
   height: 6em;
