@@ -9,7 +9,6 @@ function TermsAndConditions() {
         <h1 className="text-3xl font-bold mb-4">Terms and Conditions</h1>
         <p>Last updated: 5-May-2024</p>
       </header>
-
       <section className="my-8">
         <h2 className="text-2xl font-semibold mb-2">1. Introduction</h2>
         <p>
@@ -17,7 +16,6 @@ function TermsAndConditions() {
           conditions outline the rules and regulations for the use of our app.
         </p>
       </section>
-
       <section className="my-8">
         <h2 className="text-2xl font-semibold mb-2">2. Acceptance of Terms</h2>
         <p>
@@ -26,7 +24,6 @@ function TermsAndConditions() {
           not access the app.
         </p>
       </section>
-
       <section className="my-8">
         <h2 className="text-2xl font-semibold mb-2">3. User Accounts</h2>
         <p>
@@ -36,7 +33,6 @@ function TermsAndConditions() {
           access to your account.
         </p>
       </section>
-
       <section className="my-8">
         <h2 className="text-2xl font-semibold mb-2">4. Subscriptions</h2>
         <p>
@@ -62,7 +58,6 @@ function TermsAndConditions() {
           going to your Account Settings on the App Store after purchase.
         </p>
       </section>
-
       <section className="my-8">
         <h2 className="text-2xl font-semibold mb-2">
           5. Intellectual Property
@@ -73,7 +68,6 @@ function TermsAndConditions() {
           licensors and is protected by copyright laws.
         </p>
       </section>
-
       <section className="my-8">
         <h2 className="text-2xl font-semibold mb-2">
           6. Limitation of Liability
@@ -86,6 +80,20 @@ function TermsAndConditions() {
       </section>
 
       <section className="my-8">
+        <h2 className="text-2xl font-semibold mb-2">8. ELAU Agreement</h2>
+        <p>
+          The End-User License Agreement (EULA) for Lift&Learn governs your use
+          of our app and any software embedded within it. By downloading,
+          installing, or using the app, you agree to comply with and be bound by
+          the terms of the EULA. The EULA includes provisions regarding the
+          license grant, restrictions on use, and limitations of liability,
+          among other terms. For a complete understanding of your rights and
+          obligations under the EULA, please refer to the full text available
+          within the app or on our website.
+        </p>
+      </section>
+
+      <section className="my-8">
         <h2 className="text-2xl font-semibold mb-2">7. Governing Law</h2>
         <p>
           These terms and conditions shall be governed by and construed in
@@ -93,7 +101,6 @@ function TermsAndConditions() {
           regard to its conflict of law provisions.
         </p>
       </section>
-
       <section className="my-8">
         <h2 className="text-2xl font-semibold mb-2">8. Contact Us</h2>
         <p>
@@ -103,7 +110,6 @@ function TermsAndConditions() {
         <p>Email: pauljprisco@yahoo.com</p>
         <p>Phone: (631) 428-5926</p>
       </section>
-
       <footer className="my-8">
         <p>
           These terms and conditions are effective as of 5-May-2024. Any updates
