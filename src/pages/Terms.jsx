@@ -80,7 +80,7 @@ function TermsAndConditions() {
       </section>
 
       <section className="my-8">
-        <h2 className="text-2xl font-semibold mb-2">8. ELAU Agreement</h2>
+        <h2 className="text-2xl font-semibold mb-2">7. ELAU Agreement</h2>
         <p>
           The End-User License Agreement (EULA) for Lift&Learn governs your use
           of our app and any software embedded within it. By downloading,
@@ -94,7 +94,7 @@ function TermsAndConditions() {
       </section>
 
       <section className="my-8">
-        <h2 className="text-2xl font-semibold mb-2">7. Governing Law</h2>
+        <h2 className="text-2xl font-semibold mb-2">8. Governing Law</h2>
         <p>
           These terms and conditions shall be governed by and construed in
           accordance with the laws of the United States of America, without
