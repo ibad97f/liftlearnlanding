@@ -1,4 +1,4 @@
- import img from '../images/recipe-2.jpg'
+
  const recipe = [
    {
     img:'https://img.freepik.com/free-photo/motivational-text-with-healthy-elements_1134-373.jpg?size=626&ext=jpg&uid=R148147467&ga=GA1.1.361505309.1715239452&semt=ais_user',
@@ -70,5 +70,28 @@ const workOut = [
       title:'Lunge'
    },
 ]
+const weProvide = [
+   {route:'01',
+   title:"Workout Plans",
+   tags:'Workout',
+   subHeading:"Beginner, Intermediate, Expert Plans",
+   description:" Comprehensive workout plans designed for all fitness levels. Each plan includes a detailed weekly schedule with specific exercises, sets, and repetitions. Accompanied by exercise videos to ensure proper form and technique.",
+image:"https://images.unsplash.com/photo-1581009137042-c552e485697a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  
+},
+{route:'02',
+   title:"Calories Recipes",
+   tags:'Calories',
+   subHeading:"Nutritional Information and Search Functionality",
+   description:"A user-friendly recipe database where users can search for various recipes and obtain detailed information. Each recipe includes calorie count, nutrient breakdown, and preparation instructions to support healthy eating and fitness goals.",
+   image:'https://images.unsplash.com/photo-1494390248081-4e521a5940db?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmVjaXBlc3xlbnwwfHwwfHx8MA%3D%3D'     
+},
+   {route:'03',
+      title:" Exercise Videos",
+      tags:'Exercise',
+      subHeading:"Targeted Muscle Groups",
+      description:"A collection of high-quality exercise videos focusing on specific muscle groups. Separate videos for biceps, triceps, shoulders, abs, and more. Each video provides step-by-step instructions and tips to maximize effectiveness and safety.",
+      image:"https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fEd5bSUyMEV4Y2VyY2lzZSUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D"  
+   },
+]
 
-export {recipe,workOut}
+export {recipe,workOut,weProvide}

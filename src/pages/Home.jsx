@@ -1,45 +1,20 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../App.css";
-import { GiWeightLiftingUp } from "react-icons/gi";
-import { CgGym } from "react-icons/cg";
-import { recipe, workOut } from "../assets/data/data";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import header from "../assets/banner.png";
-import logo from "../assets/logo.png";
+import header from "../assets/image/banner.png";
+import logo from "../assets/image/logo.png";
 import Navbar from "../components/navbar";
-import RecipesCard from "../components/recipesCard";
-import WorkoutCard from "../components/workoutCard";
+import { weProvide } from "../assets/data/data";
 function Home() {
-  useEffect(() => {
-    console.log(recipe);
-  }, []);
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 3,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+  
   return (
     <>
-      <div className=" overflow-x-hidden">
-        <Navbar />
-        <div className="">
-          <section className="">
-            <div className=" mx-auto flex px-5 py-6 md:flex-row flex-col items-center justify-center">
-              <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <div className="">
+        <Navbar  />
+        <div className="px-20">
+          <section className="pt-12">
+            <div className="flex py-6 md:flex-row flex-col items-center justify-center">
+              <div className="lg:flex-grow md:w-1/2   flex flex-col md:items-start md:text-left items-center text-center">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium ">
                   Lift & Learn
                 </h1>
@@ -108,77 +83,33 @@ function Home() {
           </section>
 
           <section className="my-4">
-            <h1 className="w-full sm:text-4xl text-3xl mb-4 font-medium text-primary">
+          <span className="text-primary border-b border-primary font-semibold text-sm">Services</span>
+            <h1 className="w-full sm:text-4xl text-3xl mb-8 font-medium ">
               We Provide You
             </h1>
-            <p className="px-48 text-[#8b8b8b]">
-              Unlock your fitness potential! Join our gym community and enjoy
-              state-of-the-art equipment, personalized training programs, and a
-              supportive atmosphere. Start your journey towards a healthier,
-              stronger you today!
-            </p>
-            <div className="flex justify-center w-full mt-4 gap-2">
-              <div className="rounded px-5 w-1/4 border border-primary py-2 ">
-                <div className="flex items-center mb-3 text-[30px] ">
-                  <GiWeightLiftingUp className=" " />
-                  <p className="font-normal">New Machinens</p>
-                </div>
-
-                <p className="text-start">
-                  Experience Cutting-Edge Gym Machines - Transform Your Workout
-                  Today!
-                </p>
-              </div>
-              {/*  */}
-              <div className="rounded px-5 w-1/4 border border-primary py-2 ">
-                <div className="flex items-center mb-3 text-[30px] ">
-                <CgGym />
-                  <p className="font-normal">Personal Training</p>
-                </div>
-
-                <p className="text-start">
-                  Experience Cutting-Edge Gym Machines - Transform Your Workout
-                  Today!
-                </p>
-              </div>
-              {/*  */}
-              <div className="rounded px-5 w-1/4 border border-primary py-2 ">
-                <div className="flex items-center mb-3 text-[30px] ">
-                  <GiWeightLiftingUp className=" " />
-                  <p className="font-normal">Environment </p>
-                </div>
-
-                <p className="text-start">
-                A gym's community environment is essential for fostering motivation, support.
-                </p>
-              </div>
+            <div className="">
+              {weProvide?.map((data, index) => {
+                return (
+                 <div className="w-full flex justify-center items-center mb-20 " id={data?.route}>
+                  <div className={`w-1/2  pe-8 ${index%2==1 && 'order-1'}`}>
+                    <img src={data?.image} alt="" className="  h-[300px] rounded-md w-full" />
+                  </div>
+                  <div className={`w-1/2 ${index%2==1 && ''}`}>
+                  <p className="text-primary text-[12px] font-semibold text-start mb-2">
+                    <span className="border rounded-full border-primary px-2 py-1">{data?.tags}</span>
+                    </p>
+                    <h1 className="text-2xl font-semibold text-start m-0">{data?.title}</h1>
+                    <p className="text-md font-normal text-primary text-start  py-1 m-0"> {data?.subHeading}</p>
+                  <p className="mt-4 text-start">
+                    {data?.description}
+                  </p>
+                  </div>
+                 </div>
+                );
+              })}
             </div>
           </section>
         </div>
-        <section className="my-4">
-          <p className="text-start sm:text-4xl text-3xl mb-4 font-medium text-primary">
-            1000s of recipes
-          </p>
-          <div className="w-full !overflow-x-hidden">
-          <Carousel responsive={responsive} >
-            {recipe.map((data) => {
-              return <RecipesCard data={data} />;
-            })}
-          </Carousel>
-
-          </div>
-        </section>
-
-        <section className="my-4">
-          <p className="text-start sm:text-4xl text-3xl mb-4 font-medium text-primary">
-            Workout
-          </p>
-          <div className="flex flex-wrap">
-            {workOut?.map((data) => (
-              <WorkoutCard key={data.id} data={data} />
-            ))}
-          </div>
-        </section>
 
         <div className="bg-[#393939]">
           <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
