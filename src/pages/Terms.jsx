@@ -52,7 +52,7 @@ function TermsAndConditions() {
             <li>Yearly Subscription: $19.99</li>
           </ul>
           <li>
-            <strong>Full Access</strong>
+            <strong>Full Access {`(Get Access to All Workouts ad Videos)`}</strong>
           </li>
           <ul>
             <li>Monthly Subscription: $9.99</li>
