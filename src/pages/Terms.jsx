@@ -34,28 +34,50 @@ function TermsAndConditions() {
         </p>
       </section>
       <section className="my-8">
-        <h2 className="text-2xl font-semibold mb-2">4. Subscriptions</h2>
+      <h2 className="text-2xl font-semibold mb-2">4.Auto Renewable Subscription</h2>
+
+        <h4 className="text-2xl font-semibold mb-2">
+          Step 1: Start Your Free Trial
+        </h4>
         <p>
-          We offer two types of subscriptions: Full Subscription and Exercise
-          Videos Subscription. By subscribing to our services, you agree to pay
-          the applicable fees and abide by the terms and conditions outlined
-          herein.
+          Get unlimited access to our library of workout videos and plans.
+          Choose the plan that fits you best:
         </p>
+        <ul>
+          <li>
+            <strong>Video Access Only</strong>
+          </li>
+          <ul>
+            <li>Monthly Subscription: $2.99</li>
+            <li>Yearly Subscription: $19.99</li>
+          </ul>
+          <li>
+            <strong>Full Access</strong>
+          </li>
+          <ul>
+            <li>Monthly Subscription: $9.99</li>
+            <li>Yearly Subscription: $99.99</li>
+          </ul>
+        </ul>
+      </section>
+
+      <section className="my-8">
+        <h2 className="text-2xl font-semibold mb-2">Step 2: Cancel Anytime</h2>
         <p>
-          a. <strong>Full Subscription:</strong> This subscription provides
-          access to all features and content available in the app.
+          No commitment required. You can cancel your subscription at any time
+          with just a few clicks.
         </p>
+      </section>
+
+      <section className="my-8">
+        <h2 className="text-2xl font-semibold mb-2">
+          Step 3: 3-Day Free Trial
+        </h2>
         <p>
-          b. <strong>Exercise Videos Subscription:</strong> This subscription
-          provides access to our library of exercise videos.
-        </p>
-        <p>
-          All subscription purchases made through Apple's App Store are subject
-          to Apple's terms and conditions. Payment will be charged to your Apple
-          ID account at the confirmation of purchase. Subscriptions
-          automatically renew unless canceled at least 24 hours before the end
-          of the current period. You can manage and cancel your subscriptions by
-          going to your Account Settings on the App Store after purchase.
+          Enjoy a full 3-day trial period to explore all the features of our
+          app. After the trial period ends, you will be automatically enrolled
+          in your chosen subscription plan. Don't worry, you can still cancel
+          anytime during the trial period.
         </p>
       </section>
       <section className="my-8">
@@ -102,7 +124,7 @@ function TermsAndConditions() {
         </p>
       </section>
       <section className="my-8">
-        <h2 className="text-2xl font-semibold mb-2">8. Contact Us</h2>
+        <h2 className="text-2xl font-semibold mb-2">9. Contact Us</h2>
         <p>
           If you have any questions or concerns about these terms and
           conditions, you may contact us at:
