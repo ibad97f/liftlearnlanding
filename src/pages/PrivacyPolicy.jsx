@@ -76,7 +76,6 @@ function PrivacyPolicy() {
           practices, you may contact us at:
         </p>
         <p>Email: pauljprisco@yahoo.com</p>
-        <p>Phone: (631) 428-5926</p>
       </section>
 
       <footer className="my-8">
